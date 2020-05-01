@@ -2,6 +2,7 @@
 /.git/
 /bower_components/
 /.idea/
+/app/
 /**/*.psd
 /**/package-lock.json
 /**/Thumbs.db
