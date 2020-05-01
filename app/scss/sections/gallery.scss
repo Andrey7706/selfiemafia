@@ -1,0 +1,64 @@
+@keyframes galety{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.container-galery{
+    padding: 15px;
+    min-height: 582px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.block_infinity{
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 1920px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    animation-name: galety;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+}
+.block_infinity.block_infinity_two{
+    left: -1920px;
+}
+.unit_infinity{
+    width: 16.66%;
+    height: 291px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@media (max-width: 768px) {
+	.container-galery {
+		min-height: 460px;
+	}
+	.unit_infinity {
+		height: 230px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container-galery {
+		min-height: 400px;
+	}
+	.unit_infinity {
+		height: 200px;
+	}
+}

@@ -1,0 +1,135 @@
+.contact {
+    background: url("../img/bg-last.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 161px;
+    padding-bottom: 113px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .container {
+        position: relative;
+    }
+}
+.contact_dialog {
+    background: url("../img/dialog.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 409px;
+    height: 311px;
+    bottom: -98px;
+    left: 55px;
+    box-sizing: border-box;
+    font-size: rem(30px);
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'GTEestiProDisplay-Medium', sans-serif;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 70px;
+    padding-bottom: 75px;
+}
+
+.contact_contact {
+    max-width: 411px;
+    background: $white;
+    padding: 70px 65px 57px 72px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: auto;
+    margin-right: 160px;
+
+    .contact_smile {
+        background: url("../img/smile.png");
+        background-repeat: no-repeat;
+        display: block;
+        width: 114px;
+        height: 114px;
+        position: absolute;
+        top: -95px;
+        left: -120px;
+    }
+    .contact_smile-2 {
+         background: url("../img/smile-2.png");
+        background-repeat: no-repeat;
+         display: block;
+         width: 208px;
+         height: 208px;
+         position: absolute;
+         top: -140px;
+         right: -45px;
+     }
+    .contact_smile-3 {
+        background: url("../img/smile-3.png");
+        background-repeat: no-repeat;
+        display: block;
+        width: 79px;
+        height: 79px;
+        position: absolute;
+        bottom: -42px;
+        right: 185px;
+    }
+}
+.contact_title {
+    font-size: rem(22px);
+    line-height: 1;
+    letter-spacing: 0.03em;
+    font-family: 'GTEestiProDisplay-Regular', sans-serif;
+}
+.contact_phone {
+    font-size: rem(35px);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'GTEestiProDisplay-Medium', sans-serif;
+    color: $black;
+    margin-top: 13px;
+    display: block;
+    white-space: nowrap;
+}
+.contact_mail {
+    font-size: rem(22px);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: #4D4D4D;
+    font-family: 'GTEestiProDisplay-Regular', sans-serif;
+    margin-top: 19px;
+    margin-bottom: 39px;
+    display: block;
+}
+.contact_messenger, .contact_social {
+    font-size: rem(18px);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    margin-bottom: 17px;
+    display: flex;
+    align-items:flex-start;
+}
+.contact_messenger li, .contact_social li {
+    display: inline-block;
+    margin-right: 16px;
+}
+.contact_messenger li a, .contact_social li a {
+    display: block;
+}
+.contact_messenger li:first-child, .contact_social li:first-child {
+    padding-top: 5px;
+}
+
+@media  (max-width: 1024px) {
+    .contact_dialog {
+        display: none;
+    }
+}
+@media  (max-width: 768px) {
+    .contact_contact {
+        margin-right: auto;
+        padding: 50px 20px 30px 20px;
+    }
+    .contact_phone {
+        font-size: rem(30px);
+    }
+}

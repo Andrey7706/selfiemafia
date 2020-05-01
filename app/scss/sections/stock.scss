@@ -1,0 +1,149 @@
+.stock {
+    padding-top: 153px;
+    padding-bottom: 103px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.stock_title {
+    max-width: 336px;
+    text-align: right;
+    position: absolute;
+    top: 145px;
+    left: 170px;
+}
+.stock_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.stock_content {
+    max-width: 948px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        background-image: url("../img/cnft2.png");
+        width: 1136px;
+        height: 1143px;
+        position: absolute;
+        left: -474px;
+        bottom: -750px;
+        z-index: -1;
+    }
+}
+.stock_item {
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 66px;
+
+    &-center {
+        margin-top: 340px;
+    }
+
+    &-bottom {
+        margin-top: -340px;
+    }
+}
+.stock_img {
+    max-width: 425px;
+    height: auto;
+    position: relative;
+    z-index: 55;
+}
+.stock_img img {
+    max-width: 425px;
+    width: 100%;
+    height: auto;
+}
+.stock_box {
+    max-width: 363px;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 34px 30px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 60;
+    margin-top: -90px;
+}
+.stock_item-title {
+    font-size: rem(24px);
+    line-height: 1.375;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-family: 'GTEestiProDisplay-Medium', sans-serif;
+}
+.stock_text {
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+}
+.stock_text a {
+    font-family: 'GTEestiProDisplay-Medium', sans-serif;
+    color: #C92A38;
+    text-decoration: underline;
+}
+.stock_text a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .stock_item {
+        margin-bottom: 20px;
+    }
+    .stock_item-center {
+        margin-top: 0;
+    }
+    .stock_item-bottom {
+        margin-top: 0;
+    }
+    .stock_content {
+        padding-top: 20px;
+    }
+    .stock_title {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    .stock_content {
+        justify-content: center;
+    }
+    .stock {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .stock_title {
+        text-align: center;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .stock_box {
+        padding: 15px;
+    }
+    .stock_text {
+        margin-top: 10px;
+    }
+    .stock_item {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+@media (max-width: 480px) {
+	.stock_item-title {
+		font-size: rem(20px);
+	}
+}

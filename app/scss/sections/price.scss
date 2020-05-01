@@ -1,0 +1,172 @@
+.price {
+    padding-top: 118px;
+    padding-bottom: 68px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.price_title {
+    padding-left: 122px;
+    min-height: 93px;
+    max-width: 450px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 30;
+}
+.price_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 0;
+    position: relative;
+}
+.price_item {
+    width: 370px;
+    margin: 0 15px 20px;
+    padding: 66px 43px 44px 42px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+.price_item-decor {
+    position: relative;
+
+    &:before {
+        width: 192px;
+        height: 500px;
+        content: "";
+        background: url("../img/baloons2.png");
+        display: block;
+        position: absolute;
+        right: 100px;
+        bottom: -535px;
+    }
+}
+.price_box {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.price_item-title {
+    font-size: rem(22px);
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'GTEestiProDisplay-Medium', sans-serif;
+    margin-bottom: 34px;
+}
+.price_list {
+
+    li {
+        background-image: url("../img/check.svg");
+        background-repeat: no-repeat;
+        background-position: left 5px;
+        padding-left: 30px;
+        margin-bottom: 25px;
+        font-size: rem(16px);
+        line-height: 1.375;
+        letter-spacing: 0.05em;
+        min-height: 24px;
+    }
+}
+.price_old {
+    font-size: rem(26px);
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+    color: #4D4D4D;
+    font-family: 'GTEestiProDisplay-Bold', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.price_new {
+    font-size: rem(55px);
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: #19B200;
+    font-family: 'GTEestiProDisplay-Bold', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.price_description {
+    font-size: rem(14px);
+    line-height: 1.36;
+    letter-spacing: 0.05em;
+    color: #737373;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.price_button {
+    max-width: 285px;
+    margin: 20px auto 0;
+}
+
+.price_dop {
+    flex-grow: 1;
+}
+
+@media (max-width: 1169px) {
+    .price_wrap {
+        max-width: 800px;
+        justify-content: left;
+        margin: 60px auto 0;
+        flex-wrap: wrap;
+    }
+    .price_item-decor {
+
+        &:before {
+            right: -320px;
+            top: 120px;
+        }
+    }
+    .price_item {
+        align-self: stretch;
+    }
+}
+
+@media (max-width: 992px) {
+    .price {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .price_wrap {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 829px) {
+    .price_wrap {
+        justify-content: center;
+    }
+    .price_item-decor::before {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .price_title {
+        padding-left: 100px;
+    }
+}
+@media (max-width: 480px) {
+    .price_item {
+        padding: 20px 15px 30px;
+    }
+    .price_list li {
+        margin-bottom: 10px;
+    }
+    .price_item-title {
+        margin-bottom: 20px;
+    }
+    .price_title {
+        padding-left: 80px;
+        min-height: 65px;
+    }
+    .price_old {
+        margin-top: 15px;
+    }
+	.price_item {
+        margin: 0 0 20px;
+    }
+}
